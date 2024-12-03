@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clicker</title>
     <link rel="stylesheet" href="bonito.css">
-    <h1>
-        <label for="upgrade1" id="labelUpgrade">click +1</label>
-        <button id="upgrade1" onclick="comprarUpgrade()">comprar (10)</button>
-    <h1>
 </head>
 <body>
-    <h1 id="total">0<h1></h1>
-    <img id="imagem" src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/34/Esporte_Clube_Vit%C3%B3ria_logo.png/120px-Esporte_Clube_Vit%C3%B3ria_logo.png" onclick="Add()" width="" height="">
+    <div id="meio">
+        <h1>
+            <label for="upgrade1" id="labelUpgrade">click +1</label>
+            <button id="upgrade1" onclick="comprarUpgrade()">comprar (10)</button>
+        <h1>
+        <h1 id="total">0</h1><h1></h1>
+        <img id="imagem" src="data:image/png;base64,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" onclick="Add()" width="175" height="175">
+    </div>
 </body>
+
 <script src="parteruim.js"></script>
 </html>
