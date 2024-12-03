@@ -12,14 +12,15 @@
     margin-left: 40px;
     font-size: 40px;
     display: inline-block;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 #upgrade1{
     cursor: pointer;
 }
 label{
+    border: 2px solid black;
     margin-top: 200px;
-    margin-left: 900px;
-    color: red;
-    background-color:bisque;
+    margin-left: 590px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
 }
