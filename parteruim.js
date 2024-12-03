@@ -11,6 +11,10 @@ function Add(){
 function comprarUpgrade() {
     Cookies = Cookies - 10;
     AddCookies += 1;
+    if  (Cookies < 10){
+        alert("voce n tem cookies suficientes!")
+        Cookies += 0
+        return;}
     document.getElementById("upgrade1").style.display = 'none';
     document.getElementById("labelUpgrade").style.display = 'none';
 }
