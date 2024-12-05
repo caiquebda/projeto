@@ -3,62 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker</title>
+    <title>Goku</title>
     <link rel="stylesheet" href="bonito.css">
 </head>
 <body>
-
+    <h1 class="titulo">Goku Showdown</h1>
     <div id="meio">
 
-        <div class="esquerda">
-
-            <h1 id="total">0</h1>
-            <img id='imagem' src="https://s3.amazonaws.com/comicgeeks/characters/avatars/19.jpg?t=1731868471" onmousewheel="Add()" onclick="Add()" width="175" height="175">
-        
-        </div>
-
-        <div class="direita">
-            
-            <h1 id="poderclick">0</h1>
-            
-            <div class="opcoes">
-                
-                <h1>
-                    <label for="upgrade1" id="labelUpgrade">Click +1</label>
-                    <button id="upgrade1" onclick="comprarUpgrade('1')">comprar (100)</button>
-                
-                </h1>
-
-                <h1>
-                    <label class="e"for="botaoreset" id="labelreset" >Click *2</label>
-                    <button class="e" id="botaoreset" onclick="comprarUpgrade('2')" >comprar (200)</button>
-                
-                </h1>
-
-                <h1 >
-                    <label class="e"for="botaoreset" id="labelreset2" >Click *3</label>
-                    <button class="e" id="botaoreset2" onclick="comprarUpgrade('3')" >comprar (300)</button>
-                
-                </h1>
-                
-                <h1 >
-                    <label class="e"for="botaoreset" id="labelreset3" >Click *4</label>
-                    <button class="e" id="botaoreset3" onclick="comprarUpgrade('4')" >comprar (400)</button>
-                
-                </h1>
-                
-                <h1 >
-                    <label class="e"for="botaoreset" id="labelreset4" >Click *5</label>
-                    <button class="e" id="botaoreset4" onclick="comprarUpgrade('5')" >comprar (500)</button>
-                
-                </h1>
-
+        <div class="horizontal-align">
+            <div class="esquerda">
+                <h1 id="Vida Total">Freeza</h1>
+                <img id="boss" src="https://preview.redd.it/umm9r0lhpjuc1.jpeg?auto=webp&s=ec9db3d7af51996881e5916fca97f3aa2ff36ca8" width="175" height="175" onclick="diminuirVidaBoss()", onwheel="diminuirVidaBoss()">
+                <div class="barra-de-vida">
+                    <div class="vida" id="vida-boss"></div>
+                </div>
             </div>
 
+            <img id="background-image" src="https://preview.redd.it/dragon-ball-ipad-wallpaper-v0-o7ergkpun5y91.jpg?auto=webp&s=f4eae75ef11b5e74955ce74582d5f13931e8a9a4" alt="Background Image">
+
+            <div class="direita">
+                <h1 id="poderclick">0</h1>
+                <h1 id="total">0</h1>
+                <img id='imagem' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b615d940-8b37-4c2c-ad38-bab58c21724c/dewjixg-fb807973-5a18-4252-b66a-23c805f612c4.jpg/v1/fill/w_894,h_894,q_70,strp/base_form_goku__edit_background__by_vegitoblackgreen_dewjixg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE0NCIsInBhdGgiOiJcL2ZcL2I2MTVkOTQwLThiMzctNGMyYy1hZDM4LWJhYjU4YzIxNzI0Y1wvZGV3aml4Zy1mYjgwNzk3My01YTE4LTQyNTItYjY2YS0yM2M4MDVmNjEyYzQuanBnIiwid2lkdGgiOiI8PTExNDQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.M5x4gM1_UcPpyxOJyJC4q-HmmGxk8FwGttrW9Y4ttug" onmousewheel="Add()" onclick="Add()" width="191" height="185">
+            </div>
         </div>
+        
+        <div class="opcoes">
+            <h1>
+                <label for="upgrade1" id="labelUpgrade">Click + 1</label>
+                <button id="upgrade1" onclick="comprarUpgrade('1')">comprar (10)</button>
+                <button id="upgrade1max" onclick="comprarmax('1')">comprar max ()</button>
+            </h1>
 
+            <h1>
+                <label for="botaoreset" id="labelreset">Click * 2</label>
+                <button id="botaoreset" onclick="comprarUpgrade('2')">comprar (20)</button>
+                <button id="upgrade2max" onclick="comprarmax('2')">comprar max ()</button>
+            </h1>
+            <h1>
+                <label for="resetall" id="labelresetall">Renascer</label>
+                <button id="resetall">Click +2 (permanente)</button>
+            </h1>
+        </div>
     </div>
-
+    
     <script src="parteruim.js"></script>
 
 </body> 
