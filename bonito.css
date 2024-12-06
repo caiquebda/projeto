@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0000ff, #000000); 
+    background: linear-gradient(to bottom, #df6d02, #000000); 
     color: #333;
     margin: 0;
     padding: 0;
@@ -86,7 +86,7 @@ body {
     border-radius: 5px;  
 }
 
-#upgrade1, #botaoreset, #upgrade1max,#upgrade2max {
+#upgrade1, #botaoreset, #upgrade1max,#upgrade2max, #botaoCPS {
     cursor: pointer;
     padding: 5px 10px;
     background-color: #4CAF50;
@@ -97,16 +97,16 @@ body {
     z-index: 3;
 }
 
-#upgrade1:hover, #botaoreset:hover, #upgrade1max:hover,#upgrade2max:hover,#resetall:hover {
-    background-color: #3cce43;
+#upgrade1:hover, #botaoreset:hover, #upgrade1max:hover,#upgrade2max:hover,#resetall:hover, #botaoCPS:hover ,#span:hover {
+    background-color: #32e23b;
 }
 
-#labelUpgrade, #labelreset,#labelresetall {
+#labelUpgrade, #labelreset,#labelresetall,#labelCPS,#labelfusão{
     border: 2px solid #333;
     margin: 10px;
     color: #000000;
     background-color: #fff;
-    padding: 5px 1px;
+    padding: 5px;
     border-radius: 10px;
     text-align: left;  
     z-index: 3;
@@ -137,7 +137,7 @@ body {
 .vida {
     height: 100%;
     background-color: red;
-    width: 100%; /* Início com a vida cheia */
+    width: 100%; 
     transition: width 0.3s ease-in-out;
 }
 
@@ -146,4 +146,71 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+#fusion {
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#fusion img {
+    transition: transform 0.3s ease;
+}
+
+#fusion:hover {
+    background-color: #3cce43;
+}
+
+#fusion img:hover {
+    transform: scale(1.1);
+}
+#fusion {
+    border: 2px solid #333;
+    padding: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 175px;
+    width: 175px;
+    margin-left: 10px; 
+}
+#vegeta{
+    border: 2px solid #333;
+    padding: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 160px;
+    width: 160px;
+    margin-left: 10px;
+}
+#fusão {
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#fusão img {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+#fusão:hover {
+    background-color: #3cce43;
+}
+
+#fusão img:hover {
+    transform: scale(1.1);
 }
