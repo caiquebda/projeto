@@ -13,7 +13,7 @@
         <div class="horizontal-align">
             <div class="esquerda">
                 <h1 id="Vida Total">Freeza</h1>
-                <img id="boss" src="https://preview.redd.it/umm9r0lhpjuc1.jpeg?auto=webp&s=ec9db3d7af51996881e5916fca97f3aa2ff36ca8" width="175" height="175" onclick="diminuirVidaBoss()", onwheel="diminuirVidaBoss()">
+                <img id="boss" src="https://preview.redd.it/umm9r0lhpjuc1.jpeg?auto=webp&s=ec9db3d7af51996881e5916fca97f3aa2ff36ca8" width="175" height="175" onclick="diminuirVidaBoss()">
                 <div class="barra-de-vida">
                     <div class="vida" id="vida-boss"></div>
                 </div>
@@ -22,9 +22,9 @@
             <img id="background-image" src="https://preview.redd.it/dragon-ball-ipad-wallpaper-v0-o7ergkpun5y91.jpg?auto=webp&s=f4eae75ef11b5e74955ce74582d5f13931e8a9a4" alt="Background Image">
 
             <div class="direita">
-                <h1 id="poderclick">0</h1>
+                <h1 id="poderclick">poder = 0</h1>
                 <h1 id="total">0</h1>
-                <img id='imagem' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b615d940-8b37-4c2c-ad38-bab58c21724c/dewjixg-fb807973-5a18-4252-b66a-23c805f612c4.jpg/v1/fill/w_894,h_894,q_70,strp/base_form_goku__edit_background__by_vegitoblackgreen_dewjixg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE0NCIsInBhdGgiOiJcL2ZcL2I2MTVkOTQwLThiMzctNGMyYy1hZDM4LWJhYjU4YzIxNzI0Y1wvZGV3aml4Zy1mYjgwNzk3My01YTE4LTQyNTItYjY2YS0yM2M4MDVmNjEyYzQuanBnIiwid2lkdGgiOiI8PTExNDQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.M5x4gM1_UcPpyxOJyJC4q-HmmGxk8FwGttrW9Y4ttug" onmousewheel="Add()" onclick="Add()" width="191" height="185">
+                <img id="imagem" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b615d940-8b37-4c2c-ad38-bab58c21724c/dewjixg-fb807973-5a18-4252-b66a-23c805f612c4.jpg/v1/fill/w_894,h_894,q_70,strp/base_form_goku__edit_background__by_vegitoblackgreen_dewjixg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE0NCIsInBhdGgiOiJcL2ZcL2I2MTVkOTQwLThiMzctNGMyYy1hZDM4LWJhYjU4YzIxNzI0Y1wvZGV3aml4Zy1mYjgwNzk3My01YTE4LTQyNTItYjY2YS0yM2M4MDVmNjEyYzQuanBnIiwid2lkdGgiOiI8PTExNDQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.M5x4gM1_UcPpyxOJyJC4q-HmmGxk8FwGttrW9Y4ttug" onmousewheel="Add()" onclick="Add()" width="191" height="185">
             </div>
         </div>
         
@@ -37,12 +37,18 @@
 
             <h1>
                 <label for="botaoreset" id="labelreset">Click * 2</label>
-                <button id="botaoreset" onclick="comprarUpgrade('2')">comprar (20)</button>
-                <button id="upgrade2max" onclick="comprarmax('2')">comprar max ()</button>
+                <button id="botaoreset">comprar (20)</button>
+                <button id="upgrade2max">comprar max ()</button>
             </h1>
+
             <h1>
-                <label for="resetall" id="labelresetall">Renascer</label>
-                <button id="resetall">Click +2 (permanente)</button>
+                <label for="botaoCPS" id="labelCPS">Clicks P/S +1</label>
+                <button id="botaoCPS" onclick="adicionarUpgrade()">comprar (30)</button>
+            </h1>
+
+            <h1>
+                <img id="vegeta" onclick="fusion()" src="https://64.media.tumblr.com/e5a3761db4ee66e053aff50ba5d75c9b/b518d9aeec7bf12f-00/s1280x1920/3eccc74eccb1e2736da39389fbac605dd9e95484.jpg" width="150" height="150" alt="Vegeta">
+                <label for="fusão" id="labelfusão">Fusao(10000)</label>
             </h1>
         </div>
     </div>
